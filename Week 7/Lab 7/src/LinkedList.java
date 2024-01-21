@@ -24,13 +24,12 @@ public class LinkedList<T> {
             return;
         }
         Node node = new Node(data);
-
+        node.next = null;
         Node temp = head;
         while (temp.next != null) {
             temp = temp.next;
         }
         temp.next = node;
-        temp = node;
         length += 1;
     }
 
